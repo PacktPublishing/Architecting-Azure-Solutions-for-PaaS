@@ -1,0 +1,16 @@
+extends ../shared/template.pug
+
+block content
+    h4 Home Page
+    p Application is more-or-less running in a container, as intended. 
+
+    p
+        | The project is running using Node.js runtime, and Pug templating framework. The intended purpose of this project is to run the program in a containerized environment&mdash;on or off the cloud platforms. 
+
+    p 
+        | If you enjoy this application for its simplicity in nature, explanaion and overview please consider supporting, by contributing some code to the repository on GitHub (you can find information in 
+        a(href="/contact") Contact Page
+        | ). And do prepare for some more Node.js programming, and stuff. 😃
+    
+    if containerId
+        i Running on the container #{containerId}.
